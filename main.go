@@ -11,17 +11,6 @@ import (
 	"k8s.io/client-go/rest"
 )
 
-type Problem struct {
-	Problem_id string   `json:"problemID"`
-	Statement  string   `json:"statement"`
-	TestCases  []string `json:"testCases"`
-}
-
-type ScheduleTest struct {
-	Timestamp string    `json:"timestamp"`
-	Problems  []Problem `json:"problems"`
-}
-
 func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 	(*w).Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
