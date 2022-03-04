@@ -1,6 +1,8 @@
-# LFX-Buddy
+# LFX-Buddy: 
+## Get IPs of pods running in a cluster deployed using the given yaml files
 
-To avoid getting IP's of pods already running in the `default` namespace, these manifests should be run in the `buddy-namespace` namespace
+
+_To avoid getting IP's of pods already running in the `default` namespace, these manifests should be run in the `buddy-namespace` namespace_
 
 ## Follow these steps to deploy this web server
 
